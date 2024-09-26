@@ -1,7 +1,7 @@
 {
 	"name": "Jueguito de gato",
 	"short_name": "Gato",
-	"start_url": "/index.html",
+	"start_url": "./index.html",
 	"scope": ".",
 	"display": "standalone",
 	"background_color": "#71717a",
@@ -9,12 +9,12 @@
 	"description": "Juego sencillo de gato",
 	"icons": [
 		{
-			"src": "/favicon.webp",
+			"src": "./favicon.webp",
 			"type": "image/webp",
 			"sizes": "48x48"
 		},
 		{
-			"src": "/favicon.webp",
+			"src": "./favicon.webp",
 			"type": "image/webp",
 			"sizes": "128x128"
 		}
