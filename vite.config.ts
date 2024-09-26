@@ -16,6 +16,7 @@ export default defineConfig({
 				name: 'Jueguito de gato',
 				short_name: 'Gato',
 				start_url: './index.html',
+				lang: 'es-MX',
 				scope: '.',
 				display: 'standalone',
 				background_color: '#71717a',
@@ -24,7 +25,8 @@ export default defineConfig({
 				icons: [
 					{
 						src: './img/icon.png',
-						type: 'image/png'
+						type: 'image/png',
+						sizes: '144x144'
 					}
 				]
 			}
