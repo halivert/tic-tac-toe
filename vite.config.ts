@@ -11,7 +11,22 @@ export default defineConfig({
 		VitePWA({
 			devOptions: {
 				enabled: true
-				/* other options */
+			},
+			manifest: {
+				name: 'Jueguito de gato',
+				short_name: 'Gato',
+				start_url: './index.html',
+				scope: '.',
+				display: 'standalone',
+				background_color: '#71717a',
+				theme_color: '#14b8a6',
+				description: 'Juego sencillo de gato',
+				icons: [
+					{
+						src: './img/icon.png',
+						type: 'image/png'
+					}
+				]
 			}
 		})
 	],
