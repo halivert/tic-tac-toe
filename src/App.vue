@@ -58,7 +58,7 @@ const winner = computed(() => {
 const draw = computed(() => !winner.value && turns.value === 9);
 
 function update(i: number, j: number, turn: Cell) {
-	if (winner.value || !turn) return;
+	if (winner.value || !turn || board.value[i][j]) return;
 
 	board.value[i][j] = turn;
 }

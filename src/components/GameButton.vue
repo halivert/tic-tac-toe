@@ -16,12 +16,10 @@ defineProps<{
 			{ 'accent-red-500': cell === X },
 			{ 'accent-teal-500': cell === O },
 			{
-				'bg-red-300 dark:bg-red-900':
-					cell === X && status === 'active',
+				'bg-red-300 dark:bg-red-900': cell === X && status === 'active',
 			},
 			{
-				'bg-teal-300 dark:bg-teal-900':
-					cell === O && status === 'active',
+				'bg-teal-300 dark:bg-teal-900': cell === O && status === 'active',
 			},
 			{ 'bg-red-300 dark:bg-red-900': cell === X && status === 'winning' },
 			{ 'bg-teal-300 dark:bg-red-900': cell === O && status === 'winning' },
@@ -35,6 +33,7 @@ defineProps<{
 			},
 			{ 'bg-zinc-200 dark:bg-zinc-700': !cell || status === undefined },
 		]"
+		:disabled="Boolean(cell)"
 	>
 		{{ cell }}
 	</button>
