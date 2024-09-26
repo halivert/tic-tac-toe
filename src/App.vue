@@ -74,7 +74,7 @@ function partOfWinningCoordinates(i: number, j: number): boolean {
 </script>
 
 <template>
-	<div class="h-dvh max-w-prose mx-auto py-3 grid">
+	<div class="h-dvh w-prose max-w-full mx-auto py-3 grid">
 		<section class="place-self-center flex flex-col gap-3 relative">
 			<div
 				v-if="winner || draw"
@@ -98,7 +98,7 @@ function partOfWinningCoordinates(i: number, j: number): boolean {
 			<div class="flex gap-3" v-for="(row, i) in board" :key="i">
 				<button
 					:class="[
-						'text-[10dvh] aspect-square h-[20dvh] text-center',
+						'text-4xl aspect-square h-[25dvw] max-h-[25dvh] text-center',
 						'rounded-lg',
 						{ 'bg-zinc-200': !cell },
 						{ 'accent-red-500': cell === X },
