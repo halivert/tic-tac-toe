@@ -9,7 +9,8 @@
 	"description": "Juego sencillo de gato",
 	"icons": [
 		{
-			"src": "./favicon.webp"
+			"src": "./img/icon.png",
+			"type": "image/png"
 		}
 	]
 }
