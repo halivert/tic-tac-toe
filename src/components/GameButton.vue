@@ -22,7 +22,7 @@ defineProps<{
 				'bg-teal-300 dark:bg-teal-900': cell === O && status === 'active',
 			},
 			{ 'bg-red-300 dark:bg-red-900': cell === X && status === 'winning' },
-			{ 'bg-teal-300 dark:bg-red-900': cell === O && status === 'winning' },
+			{ 'bg-teal-300 dark:bg-teal-900': cell === O && status === 'winning' },
 			{
 				'focus:bg-red-300 hover:bg-red-300 accent-red-800 dark:focus:bg-red-800 dark:hover:bg-red-800':
 					turn === X && !cell,
